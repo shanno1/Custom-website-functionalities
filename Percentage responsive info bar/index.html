@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/responsiveinfobar.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) { 
+  //do work	
+  jQuery('.skill').each(function(){
+			jQuery(this).find('.skill-bar').animate({
+				width:jQuery(this).attr('data-percent')
+			},6000);
+		});
+
+});
+
+
+
+</script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+<section id="Skills">
+         
+            <h2 style="color: #618fba; font-size: xx-large;">HTML, CSS3 and JQUERY used for this animated percentage bar</h2><hr style="border-bottom: 1px solid #618fba;"><br>
+            	<h3 align="left" >Languages</h3>
+                <p>
+              	<div class="skill" data-percent="70%"><div class="skill-title"><span>Java</span></div><div class="skill-bar"></div><span class="perc">70%</span></div>
+              	<div class="skill" data-percent="75%"><div class="skill-title"><span>CSS3</span></div><div class="skill-bar"></div><span class="perc">75%</span></div>
+              	<div class="skill" data-percent="90%"><div class="skill-title"><span>HTML5</span></div><div class="skill-bar"></div><span class="perc">90%</span></div>
+              	<div class="skill" data-percent="60%"><div class="skill-title"><span>Javascript</span></div><div class="skill-bar"></div><span class="perc">60%</span></div>
+              	<div class="skill" data-percent="45%"><div class="skill-title"><span>JQuery</span></div><div class="skill-bar"></div><span class="perc">45%</span></div>
+              	<div class="skill" data-percent="20%"><div class="skill-title"><span>PHP</span></div><div class="skill-bar"></div><span class="perc">20%</span></div>
+              	<div class="skill" data-percent="20%"><div class="skill-title"><span>Python</span></div><div class="skill-bar"></div><span class="perc">20%</span></div>
+              	<div class="skill" data-percent="50%"><div class="skill-title"><span>C</span></div><div class="skill-bar"></div><span class="perc">50%</span></div>
+              	<div class="skill" data-percent="60%"><div class="skill-title"><span>C++</span></div><div class="skill-bar"></div><span class="perc">60%</span></div>
+              	<div class="skill" data-percent="65%"><div class="skill-title"><span>C#</span></div><div class="skill-bar"></div><span class="perc">65%</span></div>
+              	</p>
+            	<h3 align="left">Software Tools</h3>
+                <p>
+              	<div class="skill" data-percent="70%"><div class="skill-title"><span>Android</span></div><div class="skill-bar"></div><span class="perc">70%</span></div>
+              	<div class="skill" data-percent="50%"><div class="skill-title"><span>Unity3D</span></div><div class="skill-bar"></div><span class="perc">50%</span></div>
+              	<div class="skill" data-percent="40%"><div class="skill-title"><span>Cinema4D</span></div><div class="skill-bar"></div><span class="perc">40%</span></div>
+              	<div class="skill" data-percent="50%"><div class="skill-title"><span>AfterAffects</span></div><div class="skill-bar"></div><span class="perc">50%</span></div>
+              	<div class="skill" data-percent="80%"><div class="skill-title"><span>Photoshop</span></div><div class="skill-bar"></div><span class="perc">80%</span></div>
+              	<div class="skill" data-percent="90%"><div class="skill-title"><span>Notepad++</span></div><div class="skill-bar"></div><span class="perc">90%</span></div>
+              	<div class="skill" data-percent="80%"><div class="skill-title"><span>Dreamweaver</span></div><div class="skill-bar"></div><span class="perc">80%</span></div></p>
+       
+            </section>
+</body>
+</html>
