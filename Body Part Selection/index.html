@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form with Body part selector.</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bodyselector.css">
+<script src="js/bodypartlist.js"></script>
+</head>
+
+<body>
+<div id="content">
+    <h2 >Book Now<hr></h2>
+      </h2><form name="email" method="post" action="">
+    <div id="bookingform"><p >
+      <label for="Name">* Name:<br>
+      </label> 
+      <input type="text" name="Name" id="Name"><br>
+      <label for="Age">* Age:			<br>
+      </label> 
+      <input type="number" name="Age" id="Age"><br>
+      <label for="Email">* Email:</label>
+      <br>
+<input type="email" name="Name" id="ClientEmail"><br>
+      <label for="Number">* Phone Number:<br>
+      </label> 
+      <input type="number" name="Name" id="Name">
+    </p>
+      <p >
+        <label for="additional">* Additional Information:</label><br>
+        <textarea name="additional" cols="60" rows="6" id="additional"></textarea>
+        </p>
+      <p >
+        <input type="submit" name="Submit" id="Submit" value="Submit">
+        <br>
+        
+        
+      </p>
+    </div>	
+
+	
+    <div id="body">
+      <p>* Select problem area's (max 3):<br>
+        <img src="images/frontandback.png" usemap="#Map"></p>
+      <p>
+        <map name="Map">
+          <area shape="rect" coords="89,4,148,75" href="javascript:bodySelector('back_head');">
+          <area shape="rect" coords="343,6,399,70" href="javascript:bodySelector('front_head');">
+          <area shape="rect" coords="296,83,325,130" href="javascript:bodySelector('front_left_shoulder');">
+          <area shape="rect" coords="329,84,411,151" href="javascript:bodySelector('front_chest');">
+          <area shape="rect" coords="414,84,443,127" href="javascript:bodySelector('front_headight_shoulder');">
+          <area shape="rect" coords="290,138,325,173" href="javascript:bodySelector('front_left_bicep');">
+          <area shape="rect" coords="415,135,448,179" href="javascript:bodySelector('front_right_bicep');">
+          <area shape="rect" coords="421,187,463,236" href="javascript:bodySelector('front_right_forearm');">
+          <area shape="rect" coords="278,182,320,232" href="javascript:bodySelector('front_left_forearm');">
+          <area shape="rect" coords="255,234,303,291" href="javascript:bodySelector('front_left_hand');">
+          <area shape="rect" coords="439,237,481,289" href="javascript:bodySelector('front_right_hand');">
+          <area shape="rect" coords="328,156,409,213" href="javascript:bodySelector('front_stomach');">
+          <area shape="rect" coords="319,217,420,269" href="javascript:bodySelector('front_pelvis');">
+          <area shape="rect" coords="316,276,367,342" href="javascript:bodySelector('front_left_upper_leg');">
+          <area shape="rect" coords="376,273,420,343" href="javascript:bodySelector('front_right_upper_leg');">
+          <area shape="rect" coords="318,342,366,370" href="javascript:bodySelector('front_left_knee');">
+          <area shape="rect" coords="375,344,420,370" href="javascript:bodySelector('front_right_knee');">
+          <area shape="rect" coords="328,372,367,465" href="javascript:bodySelector('front_left_shin');">
+          <area shape="rect" coords="373,373,415,465" href="javascript:bodySelector('front_right_shin');">
+          <area shape="rect" coords="373,468,417,492" href="javascript:bodySelector('front_right_foot');">
+          <area shape="rect" coords="328,470,369,493" href="javascript:bodySelector('front_left_foot');">
+          <area shape="rect" coords="45,88,73,139" href="javascript:bodySelector('back_left_shoulder');">
+          <area shape="rect" coords="90,75,148,94" href="javascript:bodySelector('back_neck');">
+          <area shape="rect" coords="110,96,127,156" href="javascript:bodySelector('back_upper_spine');">
+          <area shape="rect" coords="74,94,107,161" href="javascript:bodySelector('back_left_scapula');">
+          <area shape="rect" coords="130,97,165,164" href="javascript:bodySelector('back_right_scapula');">
+          <area shape="rect" coords="167,90,196,140" href="javascript:bodySelector('back_right_shoulder');">
+          <area shape="rect" coords="113,158,127,211" href="javascript:bodySelector('back_lower_spine');">
+          <area shape="rect" coords="80,168,110,209" href="javascript:bodySelector('back_lower_left_side');">
+          <area shape="rect" coords="132,168,159,211" href="javascript:bodySelector('back_lower_right_side');">
+          <area shape="rect" coords="68,213,170,271" href="javascript:bodySelector('back_pelvis');">
+          <area shape="rect" coords="68,274,116,350" href="javascript:bodySelector('back_left_upper_leg');">
+          <area shape="rect" coords="69,357,117,462" href="javascript:bodySelector('back_left_lower_leg');">
+          <area shape="rect" coords="71,466,116,493" href="javascript:bodySelector('back_left_foot');">
+          <area shape="rect" coords="123,274,169,351" href="javascript:bodySelector('back_right_upper_leg');">
+          <area shape="rect" coords="123,359,161,463" href="javascript:bodySelector('back_right_lower_leg');">
+          <area shape="rect" coords="122,466,164,492" href="javascript:bodySelector('back_right_foot');">
+          <area shape="rect" coords="167,141,198,183" href="javascript:bodySelector('back_right_tricep');">
+          <area shape="rect" coords="37,140,72,177" href="javascript:bodySelector('back_left_tricep');">
+          <area shape="rect" coords="28,185,67,238" href="javascript:bodySelector('back_left_forearm');">
+          <area shape="rect" coords="7,240,54,289" href="javascript:bodySelector('back_left_hand');">
+          <area shape="rect" coords="169,186,211,238" href="javascript:bodySelector('back_right_forearm');">
+          <area shape="rect" coords="186,239,233,290" href="javascript:bodySelector('back_right_hand');">
+        </map>
+      </p>
+   <div id="Sbody">
+   Selected Parts:<br>
+   <ul id="Selected-body">
+   </ul>
+   
+   </div>
+   </div>
+   </form>
+<br><br>
+</div> 
+
+</body>
+</html>
